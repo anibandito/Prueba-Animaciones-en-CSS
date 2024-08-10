@@ -69,13 +69,13 @@ i {
   gap: 20px;
   width: 250px;
   height: 250px;
-  transition: width 1s;
+  transition: width 1.5s;
   padding-top: 10px;
 }
 .card img:hover {
   width: 270px;
   height: 270px;
-  background-color: rgb(234, 189, 184);
+  background-color: rgb(233, 148, 139);
 }
 
 .card {
