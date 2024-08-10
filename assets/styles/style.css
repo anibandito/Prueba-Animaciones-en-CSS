@@ -75,6 +75,7 @@ i {
 .card img:hover {
   width: 270px;
   height: 270px;
+  background-color: rgb(234, 189, 184);
 }
 
 .card {
