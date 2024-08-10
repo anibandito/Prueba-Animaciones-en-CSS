@@ -1,0 +1,144 @@
+body {
+  font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: large;
+}
+
+nav {
+  grid-area: menu;
+  padding: 7px;
+  background-color: rgb(220, 162, 162);
+}
+
+main {
+  grid-area: main;
+  padding: 10px;
+  background-color: rgba(255, 186, 186, 0.6);
+  display: grid;
+}
+
+footer {
+  grid-area: footer;
+  background-color: rgba(83, 99, 83, 0.79);
+  color: rgb(251, 212, 212);
+  padding: 1px;
+  text-align: center;
+  align-content: center;
+}
+
+.layout {
+  display: grid;
+  border: 3px solid rgb(1, 10, 1);
+}
+
+.navbar-brand img {
+  width: 150px;
+}
+
+.container-fluid {
+  background-color: rgb(255, 255, 255);
+}
+
+.navbar-nav {
+  background-color: rgba(83, 99, 83, 0.79);
+  height: 200px;
+  align-content: center;
+  justify-content: flex-end;
+  color: rgb(251, 212, 212);
+  gap: 0px;
+}
+.nav-link {
+  color: rgb(251, 212, 212);
+}
+
+i {
+  color: rgb(251, 212, 212);
+}
+
+.gallery {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.card img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 250px;
+  height: 250px;
+  transition: width 1s;
+  padding-top: 10px;
+}
+.card img:hover {
+  width: 270px;
+  height: 270px;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  font-size: 22px;
+}
+
+
+.dropdown {
+  display: flex;
+  justify-content: center;
+}
+
+.paginacion {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 576px) {
+  .layout {
+    display: grid;
+    grid-template-areas:
+      "menu"
+      "main"
+      "footer";
+  }
+
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 577px) {
+  .layout {
+    display: grid;
+    grid-template-columns: 180px 8fr;
+    grid-template-areas:
+      "menu main"
+      "menu main"
+      "footer main";
+  }
+
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .navbar-nav {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .paginacion {
+    display: flex;
+    justify-content: center;
+  }
+}
